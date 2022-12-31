@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'PT Serif', serif;
+  color: #474747;
+  margin: auto;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#container {
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
+  padding: 0 0 2rem;
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+
+#banner {
+  background-color: rgba(83, 178, 79, 0.8);
+  padding: 1.5rem;
+}
+
+form {
+  width: 100%;
+  padding: 2.2rem 0 0 0;
+}
+
+form input {
+  height: 2.5em;
+  text-align: left;
+  padding-left: .3rem;
+}
+
+#search-book input {
+  width: 50%;
+
+}
+
+#add-book {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#add-book input {
+  width: 100%;
+}
+
+hr {
+  margin: 1rem 0 0;
+}
+#book-list {
+  padding: 2rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+#book-list ul {
+  text-align: left;
+}
+#book-list li{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-transform: capitalize;
+  border-left: 6px solid rgb(83, 178, 79)
+}
+
+.delete {
+  background: rgb(209, 206, 206);
+  color: rgb(218, 26, 26);
+  padding: .5em;
+  border-radius: 6px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  max-height: fit-content;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.add {
+  float: right;
+  width: 4em;
+  height: 1.8em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #474747;
+  background: rgb(83, 178, 79);
+  border: none;
+  border-radius: 4px;
+}
+
+.add:hover {
+  box-shadow: 0px 0px 2px 2px rgba(83, 178, 79, 0.8);
+}
+.add:active {
+  transform: scale(0.8);
+  box-shadow: 0px 0px 2px 2px rgba(83, 178, 79, 0.8);
+}
