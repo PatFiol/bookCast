@@ -99,6 +99,7 @@ hr {
   max-height: fit-content;
   max-width: fit-content;
   cursor: pointer;
+  float: right;
 }
 
 .name {

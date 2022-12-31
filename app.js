@@ -1,4 +1,5 @@
 const bookList = document.querySelector('#book-list ul')
+const forms = document.forms
 
 
 // Delete book
@@ -40,3 +41,20 @@ addBook.addEventListener('submit', function (e) {
   li.appendChild(deleteButton)
   bookList.appendChild(li)
 })
+
+// search book
+  const searchBook = forms['search-book'].querySelector('input')
+
+  searchBook.addEventListener('keyup', function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    const books = bookList.getElementsByTagName('li');
+    Array.from(books).forEach(function(book){
+      const title = book.textContent;
+
+      if(title.toLowerCase().includes(searchTerm)) {
+        book.style.display = 'block'
+      } else {
+        book.style.display = 'none'
+      }
+    })
+  })
