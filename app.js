@@ -1,11 +1,11 @@
 const bookList = document.querySelector('#book-list ul')
 const forms = document.forms
-
+const buttons = document.querySelector('.buttons')
 
 // Delete book
 bookList.addEventListener('click', function(e) {
   if(e.target.className === 'delete') {
-    const li = e.target.parentElement;
+    const li = e.target.parentElement.parentElement;
     // li.parentElement.removeChild(li)
     bookList.removeChild(li)
   }
@@ -38,7 +38,7 @@ addBook.addEventListener('submit', function (e) {
 // append information
   li.appendChild(bookName)
   li.appendChild(bookAuthor)
-  li.appendChild(deleteButton)
+  li.appendChild(buttons)
   bookList.appendChild(li)
 })
 
@@ -56,5 +56,6 @@ addBook.addEventListener('submit', function (e) {
       } else {
         book.style.display = 'none'
       }
+
     })
   })

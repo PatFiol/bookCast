@@ -90,16 +90,23 @@ hr {
 }
 
 .delete {
-  background: rgb(209, 206, 206);
-  color: rgb(218, 26, 26);
   padding: .5em;
   border-radius: 6px;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
-  max-height: fit-content;
-  max-width: fit-content;
+  background-image: url(assets/delete-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid #FA5252;
   cursor: pointer;
   float: right;
+}
+
+.delete:hover {
+  box-shadow: 0 0 5px #FA5252 ;
 }
 
 .name {
@@ -109,13 +116,14 @@ hr {
 .add {
   float: right;
   width: 4em;
-  height: 1.8em;
-  font-size: 1.2rem;
+  height: fit-content;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #474747;
   background: rgb(83, 178, 79);
   border: none;
   border-radius: 4px;
+  color: rgb(248, 251, 248);
 }
 
 .add:hover {
